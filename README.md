@@ -1,12 +1,12 @@
-# Case-Study-Bellabeat
-How Can a Wellness Technology Company Play It Smart?
+# Case-Study-Bellabeat 
+# How Can a Wellness Technology Company Play It Smart?
 ![DALL·E-2024-03-25-21 26](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/c9ee7ffb-395a-4184-8a04-030db34ebbde)
 
 ## Einleitung
 In dieser Fallstudie werde ich viele praxisnahe Aufgaben eines Datenanalysten durchführen. Ich spiele die Rolle eines der Mitarbeiter von Bellabeat, einem High-Tech-Hersteller von gesundheitsorientierten Produkten für Frauen. Um die zentralen Geschäftsfragen zu beantworten, werde ich den Schritten des Datenanalyseprozesses folgen, welche ich im Data Analytics Professional Course erlernt habe: ask, prepare, process, analyze, share, and act.
 
 ## Ask
-In der ersten Phase der Datenanalyse 
+Im ersten Schritt denke ich 
 Leitfragen
 Was ist das Problem, das ich zu lösen versuche? -> Identifizierung der Geschäftsaufgabe
 Wer sind die wichtigsten Stakeholder? -> Identifizierung wichtiger Stakeholder
