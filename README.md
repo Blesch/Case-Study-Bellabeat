@@ -162,16 +162,22 @@ write.csv(combined_data, "CS/Fitabase Data 12.4.16-12.5.16/combined_data.csv")
 Die Daten wurden nun bereinigt und aufbereitet. Für die Analyse nutze ich Tableau, ein einfach zu nutzendes Tool, das neben der Visualisierung auch die Durchführung statistischer Datenanalysen ermöglicht. Es hilft mir die Daten besser zu verstehen durch die Analyse der Trends, Zusammenfassung der Daten und nahtlose Erkundung der Datensätze.
 
 Im ersten Schritt möchte ich herausfinden wie Aktiv die Nutzer in der Woche waren. Die Daten zeigen auf das Nutzer im Durschnitt 8500 Schritte pro Tag ausüben. Weiterhin zu erkennen ist das Sonntag die wenigstens Schritte und Samstag am meisten ausgeführt wurden. Eine Erklärung heirfür wäre, dass die Nutzer am Samstag nicht zur Arbeit gehen müssen und generell mehr Aktivitäten durchführen. Der Sonntag wird dann wiederum von den meisten als Ruhetag genutzt um sich auf die ankommende Arbeitswoche vorzubereiten. 
+
 ![Durchschn  Schritte pro Wochentag](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/6345885d-22f5-48ad-af91-8d34218721d0)
+
 Weitherin ist zu beobachten das die Nutzer am Montag und Dienstag mehr Schritte ausüben als von Mittwoch bis Freitag.Eine Erklärung hierfür wäre, dass die Nutzer  am Anfang der Woche noch energiegeladen vom Wochenende sind.
 Die Daten über die durschnittlichen Aktivitäten in Minuten pro Woche bestätigen dies nochmals. 
+
 ![Durchschn  Aktivität pro Wochentag](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/48b01456-2845-4fd9-88c5-957d4eab7ce1)
+
 Die Daten zeigen wie erwartet auf, dass mehr Schritte zu einem höheren Kalorienverbrauch führen können. 
+
 ![Kalorienverbrauch vs  Schritte](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/6113f63a-3072-4069-9488-3f678a841b53)
 
-
 ![Durschnittliche Intensität pro Stunde](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/4b7e48e8-3337-4cb2-8a66-87b22f20929c)
+
 Im Durschnitt schlafen die Nutzer 7 Stunden pro Tag in der Woche. Am meisten schlafen die Nutzer am Sonntag mit ca. 7,5 Stunden. Interessant zu beobachten ist, das der Mittwoch als zweiter folgt. 
+
 ![Durschnittliche Schlafdauer _ Wochentag](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/dab284e4-b4b9-43b3-8fcf-d886a960d559)
 
 
