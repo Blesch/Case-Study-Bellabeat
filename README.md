@@ -89,14 +89,29 @@ Leitfragen:
 3. Null Werte ausfindig machen mit *Conditional Formatting* und bei Bedarf bereinigen
 
 ## Datenexploration und -bereinigung mit R
-1. 
+Der komplette R Code kann hier angezeigt werden
+1. Wichtige Pakete für die Datenmanipulierung und -bereinigung installieren und laden.  
+```
+install.packages("tidyverse")
+install.packages("lubridate")
+install.packages("janitor")
 
+library(tidyverse)
+library(lubridate)
+library(janitor)
+```
+2. Als nächstes die Datensätze mit `read.csv()` importieren.
+```
+daily_activity <- read.csv("CS/Fitabase Data 12.4.16-12.5.16/dailyActivity_merged.csv")
+daily_sleep   <- read.csv("CS/Fitabase Data 12.4.16-12.5.16/sleepDay_merged.csv")
+```
+3. Die Struktur der Datensätze mit `str()` betrachten.
+```
+View(daily_activity)
+View(daily_sleep)
 
-
-
-
-
-
-
+str(daily_activity)
+str(daily_sleep)
+```
 
 
