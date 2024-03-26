@@ -161,15 +161,15 @@ write.csv(combined_data, "CS/Fitabase Data 12.4.16-12.5.16/combined_data.csv")
 # 4. Analyze/Share
 Die Daten wurden nun bereinigt und aufbereitet. Für die Analyse nutze ich Tableau, ein einfach zu nutzendes Tool, das neben der Visualisierung auch die Durchführung statistischer Datenanalysen ermöglicht. Es hilft mir die Daten besser zu verstehen durch die Analyse der Trends, Zusammenfassung der Daten und nahtlose Erkundung der Datensätze.
 
-Im ersten Schritt möchte ich herausfinden, wie aktiv die Nutzer während der Woche waren. Die Daten zeigen, dass Nutzer im Durchschnitt 8.500 Schritte pro Tag zurücklegen. Weiterhin ist zu erkennen, dass am Sonntag die wenigsten und am Samstag die meisten Schritte unternommen werden. Eine mögliche Erklärung hierfür ist, dass die Nutzer am Samstag nicht arbeiten müssen und somit generell aktiver sind. Der Sonntag wird hingegen von den meisten als Ruhetag genutzt, um sich auf die kommende Arbeitswoche vorzubereiten.
+Im ersten Schritt möchte ich herausfinden, wie aktiv die Nutzer während der Woche waren. Die Daten zeigen, dass Nutzer im Durchschnitt 8.500 Schritte pro Tag zurücklegen. Weiterhin ist zu erkennen, dass am Sonntag die wenigsten und am Samstag die meisten Schritte unternommen werden. Eine mögliche Erklärung hierfür ist, dass die Nutzer am Samstag nicht arbeiten müssen und somit generell aktiver sind. Der Sonntag wird hingegen von den meisten als Ruhetag genutzt, um sich auf die kommende Arbeitswoche vorzubereiten. Weiterhin ist zu beobachten, dass die Nutzer am Montag und Dienstag mehr Schritte zurücklegen als von Mittwoch bis Freitag. Eine mögliche Erklärung hierfür ist, dass die Nutzer zu Beginn der Woche noch energiegeladen vom Wochenende sind. 
 
-![Durchschn  Schritte pro Wochentag](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/6345885d-22f5-48ad-af91-8d34218721d0)
+![Durchschn  Schritte pro Wochentag (1)](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/149a4813-f21d-4bbb-b176-68c949216860)
 
-Weiterhin ist zu beobachten, dass die Nutzer am Montag und Dienstag mehr Schritte zurücklegen als von Mittwoch bis Freitag. Eine mögliche Erklärung hierfür ist, dass die Nutzer zu Beginn der Woche noch energiegeladen vom Wochenende sind. Die Daten über die durchschnittlichen Aktivitäten in Minuten pro Woche bestätigen dies zusätzlich.
+Die Daten über die durchschnittlichen Aktivitäten in Minuten pro Woche bestätigen dies zusätzlich.
 
 ![Durchschn  Aktivität pro Wochentag](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/48b01456-2845-4fd9-88c5-957d4eab7ce1)
 
-Außerdem bestätigen die Daten, wie erwartet, dass mehr Schritte zu einem höheren Kalorienverbrauch führen können.
+Außerdem bestätigen die Daten, wie erwartet, dass mehr Schritte zu einem höheren Kalorienverbrauch führen können. Es kann ein klarer Trend zwischen Menge der Schritte und Kalorienverbrauch beobachtet werden. 
 
 ![Kalorienverbrauch vs  Schritte](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/6113f63a-3072-4069-9488-3f678a841b53)
 
@@ -177,8 +177,11 @@ Nachdem ich die Tagesdaten analysiert habe, möchte ich nun untersuchen, wie sic
 
 ![Durschnittliche Intensität pro Stunde](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/4b7e48e8-3337-4cb2-8a66-87b22f20929c)
 
-Im Durchschnitt schlafen die Nutzer sieben Stunden pro Tag während der Woche. Am meisten Ruhe finden sie am Sonntag, mit durchschnittlich etwa 7,5 Stunden Schlaf. Interessanterweise zeigt sich, dass der Mittwoch – direkt nach dem Sonntag – die zweithöchste durchschnittliche Schlafdauer aufweist.
+Zu guter Letzte betrachte ich die Schlafdaten. Im Durchschnitt schlafen die Nutzer sieben Stunden pro Tag während der Woche. Am meisten Ruhe finden sie am Sonntag, mit durchschnittlich etwa 7,5 Stunden Schlaf. Interessanterweise zeigt sich, dass der Mittwoch – direkt nach dem Sonntag – die zweithöchste durchschnittliche Schlafdauer aufweist.
 
-![Durschnittliche Schlafdauer _ Wochentag](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/dab284e4-b4b9-43b3-8fcf-d886a960d559)
+![Durchschn  Schlafdauer pro Wochentag (1)](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/db41711d-7798-42e0-9f70-f3d90640d0d9)
 
+# 5. Act
+
+Die Daten zeigen eindeutig auf, dass die Fitbit Nutzer 
 
