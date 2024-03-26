@@ -100,6 +100,7 @@ library(tidyverse)
 library(lubridate)
 library(janitor)
 ```
+
 2. Als nächstes die Datensätze mit `read.csv()` importieren.
 ```
 daily_activity <- read.csv("CS/Fitabase Data 12.4.16-12.5.16/dailyActivity_merged.csv")
@@ -113,9 +114,11 @@ View(daily_sleep)
 str(daily_activity)
 str(daily_sleep)
 ```
+
 Die erste Spalte "Id" besteht aus einer 10-stelligen Nummer im falschen Format 
 In der Spalte "Activity Date" und "SleepDay" ist das Tracking-Datum hinterlegt. Jedoch sind beide Spalten in beiden Dateien falsch formatiert und werden dementsprechend in ein Datum-Format umgewandelt. 
-3. Unwichtige Spalten entfernen `subset()` und Namensänderung `rename()` der Spalte `ActivityDate` zu `Date`, um Dateien später zusammenfügen zu können. 
+
+4. Unwichtige Spalten entfernen `subset()` und Namensänderung `rename()` der Spalte `ActivityDate` zu `Date`, um Dateien später zusammenfügen zu können. 
 ```
 activity <- 
   subset(daily_activity, select = -c(TotalDistance, TrackerDistance, LoggedActivitiesDistance)) %>%
@@ -130,17 +133,20 @@ activity$Id <- as.character(activity$Id)
 sleep$Date <- mdy(sleep$Date)
 sleep$Id <- as.character(sleep$Id)
 ```
-4. Beide Tabellen mit `right_join` zusammenfügen und eine neue Spalte `Weekday` erstellen.
+
+5. Beide Tabellen mit `right_join` zusammenfügen und eine neue Spalte `Weekday` erstellen.
 ```
 combined_data <- activity %>%
   right_join(sleep, by=c("Id","Date")) %>%
   mutate(Weekday = weekdays(Date))
 ```
-5. Auf Duplikate `sum(duplicated())` prüfen und dementsprechend löschen `unique()`.
+
+6. Auf Duplikate `sum(duplicated())` prüfen und dementsprechend löschen `unique()`.
 ```
 sum(duplicated(combined_data))
 combined_data <- unique(combined_data)
 ```
+
 6. Wochentage ordnen.
 ```
 combined_data$Weekday <-
