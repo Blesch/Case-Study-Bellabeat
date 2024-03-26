@@ -10,8 +10,8 @@ Bellabeat ist ein High-Tech-Unternehmen, das gesundheitsorientierte Smart-Produk
 
 ## Produkte
 - **Bellabeat-App**: Die Bellabeat-App liefert Nutzern Gesundheitsdaten bezüglich ihrer Aktivität, Schlaf, Stress, Menstruationszyklus und Achtsamkeitsgewohnheiten. Diese Daten können den Nutzern helfen, ihre aktuellen Gewohnheiten besser zu verstehen und gesunde Entscheidungen zu treffen. Die Bellabeat-App verbindet sich mit ihrer Reihe von Smart-Wellness-Produkten.
-- **Leaf**: Bellabeats klassischer Wellness-Tracker kann als Armband, Halskette oder Clip getragen werden. Der Leaf-Tracker verbindet sich mit der Bellabeat-App, um Aktivität, Schlaf und Stress zu verfolgen.
-- **Time**: Diese Wellness-Uhr kombiniert das zeitlose Aussehen einer klassischen Uhr mit Smart-Technologie, um die Aktivität, den Schlaf und den Stress des Nutzers zu verfolgen. Die Time-Uhr verbindet sich mit der Bellabeat-App, um Ihnen Einblicke in Ihr tägliches Wohlbefinden zu geben.
+- **Leaf**: Bellabeats klassischer Fitness-Tracker kann als Armband, Halskette oder Clip getragen werden. Der Leaf-Tracker verbindet sich mit der Bellabeat-App, um Aktivität, Schlaf und Stress zu verfolgen.
+- **Time**: Diese Fitness-Uhr kombiniert das zeitlose Aussehen einer klassischen Uhr mit Smart-Technologie, um die Aktivität, den Schlaf und den Stress des Nutzers zu verfolgen. Die Time-Uhr verbindet sich mit der Bellabeat-App, um Ihnen Einblicke in Ihr tägliches Wohlbefinden zu geben.
 - **Spring**: Dies ist eine Wasserflasche, die die tägliche Wasseraufnahme mit Smart-Technologie verfolgt, um sicherzustellen, dass Sie den ganzen Tag über angemessen hydriert sind. Die Spring-Flasche verbindet sich mit der Bellabeat-App, um Ihre Hydrationslevel zu verfolgen.
 - **Bellabeat-Mitgliedschaft**: Bellabeat bietet auch ein abonnementbasiertes Mitgliedschaftsprogramm für Nutzer an. Die Mitgliedschaft gibt den Nutzern rund um die Uhr Zugang zu vollständig personalisierter Anleitung zu Ernährung, Aktivität, Schlaf, Gesundheit und Schönheit sowie Achtsamkeit, basierend auf ihrem Lebensstil und Ziel.
 
@@ -161,11 +161,11 @@ write.csv(combined_data, "CS/Fitabase Data 12.4.16-12.5.16/combined_data.csv")
 # 4. Analyze/Share
 Die Daten wurden nun bereinigt und aufbereitet. Für die Analyse nutze ich Tableau, ein einfach zu nutzendes Tool, das neben der Visualisierung auch die Durchführung statistischer Datenanalysen ermöglicht. Es hilft mir die Daten besser zu verstehen durch die Analyse der Trends, Zusammenfassung der Daten und nahtlose Erkundung der Datensätze.
 
-Im ersten Schritt möchte ich herausfinden, wie aktiv die Nutzer während der Woche waren. Die Daten zeigen, dass Nutzer im Durchschnitt 8.500 Schritte pro Tag zurücklegen. Weiterhin ist zu erkennen, dass am Sonntag die wenigsten und am Samstag die meisten Schritte unternommen werden. Eine mögliche Erklärung hierfür ist, dass die Nutzer am Samstag nicht arbeiten müssen und somit generell aktiver sind. Der Sonntag wird hingegen von den meisten als Ruhetag genutzt, um sich auf die kommende Arbeitswoche vorzubereiten. Weiterhin ist zu beobachten, dass die Nutzer am Montag und Dienstag mehr Schritte zurücklegen als von Mittwoch bis Freitag. Eine mögliche Erklärung hierfür ist, dass die Nutzer zu Beginn der Woche noch energiegeladen vom Wochenende sind. 
+Im ersten Schritt möchte ich herausfinden, wie aktiv die Nutzer während der Woche waren. Die Daten zeigen, dass Nutzer im Durchschnitt 8.500 Schritte pro Tag zurücklegen. Weiterhin ist zu erkennen, dass am Sonntag die wenigsten und am Samstag die meisten Schritte unternommen werden. Außerdem ist zu beobachten, dass die Nutzer am Montag und Dienstag mehr Schritte zurücklegen als von Mittwoch bis Freitag.
 
 ![Durchschn  Schritte pro Wochentag (1)](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/149a4813-f21d-4bbb-b176-68c949216860)
 
-Die Daten über die durchschnittlichen Aktivitäten in Minuten pro Woche bestätigen dies zusätzlich.
+Die Daten über die durchschnittlichen Aktivitäten in Minuten pro Wochentag bestätigen dies zusätzlich.
 
 ![Durchschn  Aktivität pro Wochentag](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/48b01456-2845-4fd9-88c5-957d4eab7ce1)
 
@@ -173,7 +173,7 @@ Außerdem bestätigen die Daten, wie erwartet, dass mehr Schritte zu einem höhe
 
 ![Kalorienverbrauch vs  Schritte](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/6113f63a-3072-4069-9488-3f678a841b53)
 
-Nachdem ich die Tagesdaten analysiert habe, möchte ich nun untersuchen, wie sich das Nutzerverhalten zu verschiedenen Tageszeiten verhält. Erwartungsgemäß zeigen die Daten die höchste Aktivitätsintensität zwischen 17 und 19 Uhr. Dies liegt wahrscheinlich daran, dass viele Menschen in der Regel direkt nach der Arbeit Sport treiben. Ein weiterer signifikanter Anstieg der Aktivität ist um 12 Uhr zu beobachten, was darauf hindeutet, dass zahlreiche Nutzer ihre Mittagspause für ein Workout nutzen.
+Nachdem ich die Tagesdaten analysiert habe, möchte ich nun untersuchen, wie sich das Nutzerverhalten zu verschiedenen Tageszeiten verhält. Erwartungsgemäß zeigen die Daten die höchste Aktivitätsintensität zwischen 17 und 19 Uhr. Ein weiterer signifikanter Anstieg der Aktivität ist um 12 Uhr zu beobachten.
 
 ![Durschnittliche Intensität pro Stunde](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/4b7e48e8-3337-4cb2-8a66-87b22f20929c)
 
@@ -182,6 +182,24 @@ Zu guter Letzte betrachte ich die Schlafdaten. Im Durchschnitt schlafen die Nutz
 ![Durchschn  Schlafdauer pro Wochentag (1)](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/db41711d-7798-42e0-9f70-f3d90640d0d9)
 
 # 5. Act
+In der letzten Phase möchte ich die Fragen welche ich mir in der ersten Phase Ask gestellt habe, beantworten. 
+- Welche Trends gibt es bei der Nutzung von Smart-Geräten?
+- Wie könnten diese Trends auf Bellabeat-Kunden anwendbar sein?
+- Wie könnten diese Trends die Marketingstrategie von Bellabeat beeinflussen?
+  
+## Fazit
+- Die Daten zeigen deutlich, dass die Fitbit-Nutzer samstags sowie zu Beginn der Woche am aktivsten sind, während am Sonntag eine deutlich geringere Aktivität zu verzeichnen ist. Eine mögliche Erklärung hierfür könnte sein, dass die Nutzer samstags nicht arbeiten müssen und dadurch generell aktiver sind. Der Sonntag wird hingegen von vielen als Ruhetag genutzt, um sich auf die anstehende Arbeitswoche vorzubereiten.
+- Am Montag und Dienstag zeigen sich die Nutzer aktiver als von Mittwoch bis Freitag. Dies lässt sich möglicherweise dadurch erklären, dass die Nutzer zu Beginn der Woche noch vom Wochenende energiegeladen und motiviert sind, was im Verlauf der Woche abnimmt.
+-Zudem belegen die Daten, dass Nutzer, die sich mehr bewegen, auch tendenziell mehr Kalorien verbrennen. Dies unterstreicht, dass der Körper umso mehr Energie benötigt, je höher das Aktivitätsniveau ist, was zu einem höheren Kalorienverbrauch führt.
+- Bei der Betrachtung der Aktivitätsintensität nach Tageszeiten fällt auf, dass zwischen 17 und 19 Uhr die mit Abstand höchste Aktivität zu verzeichnen ist. Dies wird wahrscheinlich dadurch verursacht, dass viele Menschen üblicherweise direkt nach der Arbeit Sport treiben. Ein weiterer Aktivitätsspitzenwert ist um 12 Uhr mittags zu beobachten, was darauf hindeutet, dass viele Nutzer ihre Mittagspause für ein Workout nutzen.
+- Im Durchschnitt schlafen die Nutzer sieben Stunden pro Tag während der Woche. Besonders am Sonntag finden sie mit durchschnittlich etwa 7,5 Stunden den meisten Schlaf. Es lässt sich ein Zusammenhang zwischen der Schlafdauer und dem Aktivitätslevel am Sonntag erkennen, was vermutlich daran liegt, dass der Sonntag von den meisten Menschen als Tag zur Entspannung genutzt wird.
 
-Die Daten zeigen eindeutig auf, dass die Fitbit Nutzer 
+## Handlungsempfehlung 
+Meine Handlungsempfehlung wird sich auf die Produkte *Leaf* (Fitness-Tracker) und *Time* (Fitness-Uhr) sowie die *Bellabeat App* beziehen. Es ist wichtig zu beachten, dass die Daten mit Limitierungen kommen. Zum einem bestehen die gesammelten Informationen aus einem kleinem Zeitraum von nur zwei Monaten. Des Weiteren wurden nur dreißig Nutzer analysiert. Die daraus resultierenden Handlungsempfehlungen können eine erste Richtung für das Bellabeat Team darstellen. Es wird stark empfohlen größere Auswertungen durchzuführen. Entweder von anderen Mitbewerbern oder am Besten von den eigenen Nutzern.
+
+- Bellabeat kann Benachrichtigungen an seine Nutzer senden, um diese daran zu erinnern aktiv zu werden. Dabei können besonders die aktivgeringen Tage fokussiert werden um Nutzer bei der Motiviation zu untersützen. Es könnten dem Nutzer gute Beispiele seiner eigenen Bestleistungen gezeigt werden um ihn daran zu erinnern, dass es für ihn möglich ist.
+- Diese Benachrichtungen sollten dann zu den Aktiviätsstarken Tageszeiten geesndet werden. Eine Erinnerung während der Arbeitszeit wird wahrscheinlich bis zum Feierabend bereits vergessen.
+- Bellabeat kann seinen Nutzern auch Erinnerungen für Einschlafzeiten senden um die durschnittliche Schlafzeit zu verbessern.
+- Das Marekting Team könnte sich Ideen einfallen lassen wie sie die Nutzer mit Aktionen 
+
 
