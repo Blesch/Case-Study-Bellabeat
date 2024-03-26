@@ -66,18 +66,32 @@ Für die spätere Bearbeitung werden die Ordner auf meinem Computer unter Dokume
 - Die Daten stammen von verschiedenen Typen von Fitbit-Trackern; dies könnte zu unterschiedlichen Datenausgaben führen.
 
 # 3. Process
-In dieser Phase beginne ich mit der Verarbeitung der Daten für weitere Analysen. Zuerst werde ich die Datendateien auswählen, mit denen ich arbeiten werde:
-Die Datei dailyActivity_merged.csv zeigt die Gesamtschritte und Kalorien für jeden Tag. Dies sind wichtige Messwerte für Fitness-Tracker.
-Die Datei sleepDay_merged.csv für Schlafverhalten.
-Die Datei weightLogInfo_merged.csv, die eine weitere wichtige Gesundheitszahl ist.
-Werkzeugnutzung
-Excel, um eine schnelle und einfache Überprüfung der Dateien zu erhalten und mit der Bereinigung der Daten von kleinen Fehlern zu beginnen. Als Nächstes werde ich die Programmiersprache R für weitere Bereinigungen und Transformationen der Daten verwenden, damit sie für einfache Analysen organisiert und formatiert sind. Und zuletzt werde ich Tableau verwenden, um eine dynamische Visualisierung zu erstellen.
-Leitfragen
-● Welche Werkzeuge wählen Sie und warum?
-● Haben Sie die Integrität Ihrer Daten sichergestellt?
-● Welche Schritte haben Sie unternommen, um sicherzustellen, dass Ihre Daten sauber sind?
-● Wie können Sie überprüfen, ob Ihre Daten sauber und bereit zur Analyse sind?
-● Haben Sie Ihren Bereinigungsprozess dokumentiert, sodass Sie diesen überprüfen können?
+In dieser Phase beginne ich mit der Verarbeitung der Daten für die weitere Analyse.
+
+Leitfragen:
+- Welche Werkzeuge wähle ich und warum?
+- Welche Schritte werde ich durchführen, um sicherzustellen, dass die Daten sauber sind?
+- Habe ich den Bereinigungsprozess dokumentiert, sodass Sie diesen überprüfen kann?
+
+## Auswahl der Dateien und Werkzeuge
+- dailyActivity_merged.csv zeigt die Gesamtschritte, Aktivitätslevel und Kalorien für jeden Tag. Das sind wichtige Messwerte für Fitness-Tracker.
+- sleepDay_merged.csv zeigt das Schlafverhalten der Nutzer.
+
+- **Excel** um eine schnelle und einfache Überprüfung der Dateien zu erhalten und mit der Bereinigung der Daten von kleinen Fehlern zu beginnen.
+- **Programmiersprache R** für die Bereinigung und Transformationen der Daten, damit sie für einfache Analysen organisiert und formatiert sind.
+- **Tableau** um dynamische und anspruchsvolle Visualisierungen zu erstellen.
+
+## Ersten Überblick mit Excel schaffen
+1. Betrachtung der Daten in Excel
+2. Folgende Dateien wurden für die Analyse ausgewählt:
+- dailyActivity_merged.csv zeigt die Gesamtschritte, Aktivitätslevel und Kalorien für jeden Tag. Das sind wichtige Messwerte für Fitness-Tracker
+- sleepDay_merged.csv zeigt das Schlafverhalten der Nutzer
+3. Null Werte ausfindig machen mit *Conditional Formatting* und bei Bedarf bereinigen
+
+## Datenexploration und -bereinigung mit R
+1. 
+
+
 
 
 
