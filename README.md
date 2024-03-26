@@ -2,6 +2,9 @@
 # How Can a Wellness Technology Company Play It Smart?
 ![DALL·E-2024-03-25-21 26](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/c9ee7ffb-395a-4184-8a04-030db34ebbde)
 
+![DALL·E-2024-03-25-21 26](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/9dd68923-188a-49ff-a1aa-4d64552a0ea5)
+
+
 # Einleitung
 In dieser Fallstudie werde ich viele praxisnahe Aufgaben eines Datenanalysten durchführen. Ich spiele die Rolle eines der Mitarbeiter von Bellabeat, einem High-Tech-Hersteller von gesundheitsorientierten Produkten für Frauen. Das Ziel ist es die neu erlernten Fähigkeiten aus dem Google Anayltics Professional Course praktisch anzuwenden. Dabei folge ich den erlernten Schritten des Datenanalyseprozesses: ask, prepare, process, analyze, share, and act.
 
