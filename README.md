@@ -6,7 +6,8 @@
 
 
 # Einleitung
-In dieser Fallstudie werde ich viele praxisnahe Aufgaben eines Datenanalysten durchführen. Ich spiele die Rolle eines der Mitarbeiter von Bellabeat, einem High-Tech-Hersteller von gesundheitsorientierten Produkten für Frauen. Das Ziel ist es die neu erlernten Fähigkeiten aus dem Google Anayltics Professional Course praktisch anzuwenden. Dabei folge ich den erlernten Schritten des Datenanalyseprozesses: ask, prepare, process, analyze, share, and act.
+In dieser Fallstudie werde ich viele praxisnahe Aufgaben eines Datenanalysten durchführen. Ich spiele die Rolle eines der Mitarbeiter von Bellabeat, einem High-Tech-Hersteller von gesundheitsorientierten Produkten für Frauen. Das Ziel ist es die neu erlernten Fähigkeiten aus dem Google Anayltics Professional Course praktisch anzuwenden. Dabei folge ich den erlernten Schritten des Datenanalyseprozesses: ask, prepare, process, analyze, share, and act. ![DALL·E-2024-03-25-21 26](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/9dd68923-188a-49ff-a1aa-4d64552a0ea5)
+
 
 ## Über das Unternehmen
 Bellabeat ist ein High-Tech-Unternehmen, das gesundheitsorientierte Smart-Produkte herstellt. Diese Produkte reichen von Smart-Wellness-Uhren und Trackern bis hin zu Wasserflaschen, die alle über eine App verbunden sind. Durch das Sammeln von Daten über Aktivität, Schlaf, Stress und reproduktive Gesundheit hat Bellabeat Frauen ermächtigt, Wissen über ihre eigene Gesundheit und Gewohnheiten zu erlangen. Seit seiner Gründung im Jahr 2013 ist Bellabeat schnell gewachsen und hat sich schnell als technologiegetriebenes Wellnessunternehmen für Frauen positioniert.
