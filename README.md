@@ -3,10 +3,10 @@
 ![Bild-Tracker_W](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/fce68976-2c95-45fd-b929-42882a59b5a0)
 
 # Einleitung
-In dieser Fallstudie werde ich viele praxisnahe Aufgaben eines Datenanalysten durchführen. Ich spiele die Rolle eines der Mitarbeiter von Bellabeat, einem High-Tech-Hersteller von gesundheitsorientierten Produkten für Frauen. Das Ziel ist es die neu erlernten Fähigkeiten aus dem Google Anayltics Professional Course praktisch anzuwenden. Dabei folge ich den erlernten Schritten des Datenanalyseprozesses: ask, prepare, process, analyze, share, and act.
+In dieser Fallstudie werde ich viele praxisnahe Aufgaben eines Datenanalysten durchführen. Ich spiele die Rolle eines der Mitarbeiter von Bellabeat, einem High-Tech-Hersteller von gesundheitsorientierten Produkten für Frauen. Das Ziel ist es die neu erlernten Fähigkeiten aus dem Google Data Anayltics Zertifikat praktisch anzuwenden. Dabei folge ich den erlernten Schritten des Datenanalyseprozesses: Ask, Prepare, Process, Analyze, Share, and Act. Meine Aufgabe ist es, Nutzungsdaten von Smart-Geräten zu analysieren, um zu verstehen, wie sich diese Nutzer verhalten.
 
 ## Über das Unternehmen
-Bellabeat ist ein High-Tech-Unternehmen, das gesundheitsorientierte Smart-Produkte herstellt. Diese Produkte reichen von Smart-Wellness-Uhren und Trackern bis hin zu Wasserflaschen, die alle über eine App verbunden sind. Durch das Sammeln von Daten über Aktivität, Schlaf, Stress und reproduktive Gesundheit hat Bellabeat Frauen ermächtigt, Wissen über ihre eigene Gesundheit und Gewohnheiten zu erlangen. Seit seiner Gründung im Jahr 2013 ist Bellabeat schnell gewachsen und hat sich schnell als technologiegetriebenes Wellnessunternehmen für Frauen positioniert.
+Bellabeat ist ein innovatives High-Tech-Unternehmen, das sich auf die Herstellung gesundheitsorientierter Smart-Produkte spezialisiert hat. Das Produktangebot umfasst Smart-Wellness-Uhren, Aktivitätstracker bis hin zu intelligenten Wasserflaschen, die alle nahtlos über eine eigens entwickelte App miteinander verbunden sind. Durch die Erfassung von Daten zu Aktivitäten, Schlafmustern, Stresslevel und reproduktiver Gesundheit ermöglicht Bellabeat Frauen, tiefgreifende Einblicke in ihre Gesundheit und täglichen Gewohnheiten zu gewinnen. Seit der Gründung im Jahr 2013 hat sich Bellabeat rasant entwickelt und etablierte sich als führendes technologiegetriebenes Wellnessunternehmen, das sich speziell den Bedürfnissen von Frauen widmet.
 
 ## Produkte
 - **Bellabeat-App**: Die Bellabeat-App liefert Nutzern Gesundheitsdaten bezüglich ihrer Aktivität, Schlaf, Stress, Menstruationszyklus und Achtsamkeitsgewohnheiten. Diese Daten können den Nutzern helfen, ihre aktuellen Gewohnheiten besser zu verstehen und gesunde Entscheidungen zu treffen. Die Bellabeat-App verbindet sich mit ihrer Reihe von Smart-Wellness-Produkten.
@@ -16,30 +16,27 @@ Bellabeat ist ein High-Tech-Unternehmen, das gesundheitsorientierte Smart-Produk
 - **Bellabeat-Mitgliedschaft**: Bellabeat bietet auch ein abonnementbasiertes Mitgliedschaftsprogramm für Nutzer an. Die Mitgliedschaft gibt den Nutzern rund um die Uhr Zugang zu vollständig personalisierter Anleitung zu Ernährung, Aktivität, Schlaf, Gesundheit und Schönheit sowie Achtsamkeit, basierend auf ihrem Lebensstil und Ziel.
 
 # 1. Ask
-Der CCO von Bellabeat bittet mich, Daten zur Nutzung von Smart-Geräten zu analysieren, um Einblicke zu gewinnen, wie Verbraucher Nicht-Bellabeat-Smart-Geräte verwenden. 
 Folgende Fragen leiten mich durch das Projekt:
-
 - Welche Trends gibt es bei der Nutzung von Smart-Geräten?
 - Wie könnten diese Trends auf Bellabeat-Kunden anwendbar sein?
 - Wie könnten diese Trends die Marketingstrategie von Bellabeat beeinflussen?
 
 Dabei erstelle ich folgende Deliverables:
+- Eine klare Zusammenfassung der Geschäftsaufgabe.
+- Eine Beschreibung aller verwendeten Datenquellen.
+- Die Dokumentation jeglicher Bereinigung oder Manipulation von Daten.
+- Eine Zusammenfassung der Analyse.
+- Unterstützende Visualisierungen und Schlüsselerkenntnisse.
+- Wichtigste Empfehlungen basierend auf der Analyse.
 
-- Eine klare Zusammenfassung des Business Task
-- Eine Beschreibung aller verwendeten Datenquellen
-- Dokumentation jeglicher Bereinigung oder Manipulation von Daten
-- Eine Zusammenfassung der Analyse
-- Unterstützende Visualisierungen und Schlüsselerkenntnisse
-- Wichtigste Empfehlungen basierend auf der Analyse
+Bevor ich mit der Analyse beginne, ist es entscheidend, das zugrunde liegende Problem genau zu definieren. Dies umfasst die Identifizierung der spezifischen Geschäftsaufgabe und aller relevanten Stakeholder, um sicherzustellen, dass die Analyseergebnisse gezielt und effektiv zur Lösungsfindung beitragen.
 
-Bevor ich mit der Analyse beginnen kann, ist es wichtig zu verstehen welches Problem ich überhaupt lösen soll. Dafür identifiziere ich die Geschäftsaufgabe und alle relevanten Stakeholder.
-
-## Business Task
-Analysieren von Nutzungsdaten smarter Geräte, um Einblicke zu gewinnen, wie Verbraucher nicht-Bellabeat-Smart-Devices nutzen. Diese Erkenntnisse auf ein Bellabeat-Produkt in meiner Präsentation anwenden.
+## Geschäftsaufgabe
+Meine Aufgabe ist es, Nutzungsdaten von Smart-Geräten anderer Marken zu analysieren, um zu verstehen, wie sich diese Nutzer verhalten. Diese Einblicke sollen dann genutzt werden, um Empfehlungen für ein Bellabeat-Produkt in meiner Präsentation zu integrieren.
 
 ## Stakeholder
-- **Urška Sršen**: Mitbegründerin und Chief Creative Officer von Bellabeat
-- **Sando Mur**: Mathematiker und Mitbegründer von Bellabeat; wichtiges Mitglied des Führungsteams von Bellabeat
+- **Urška Sršen**: Mitbegründerin und Chief Creative Officer von Bellabeat.
+- **Sando Mur**: Mathematiker und Mitbegründer von Bellabeat; wichtiges Mitglied des Führungsteams von Bellabeat.
 - **Bellabeat Marketinganalyseteam**: Ein Team von Datenanalysten, verantwortlich für die Sammlung, Analyse und Berichterstattung von Daten, die Bellabeats Marketingstrategie leiten.
 
 # 2. Prepare
