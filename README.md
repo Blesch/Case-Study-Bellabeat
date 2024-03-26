@@ -147,12 +147,21 @@ sum(duplicated(combined_data))
 combined_data <- unique(combined_data)
 ```
 
-6. Wochentage ordnen.
+7. Wochentage ordnen.
 ```
 combined_data$Weekday <-
 factor(combined_data$Weekday, levels=c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"))
 ```
-7. Datensatz exportieren mit `write()`.
+
+8. Datensatz exportieren mit `write()`.
 ```
 write.csv(combined_data, "CS/Fitabase Data 12.4.16-12.5.16/combined_data.csv")
 ```
+
+# 4. Analyze
+Die Daten wurden nun bereinigt und aufbereitet. Für die Analyse nutze ich Tableau, ein einfach zu nutzendes Tool, das neben der Visualisierung auch die Durchführung statistischer Datenanalysen ermöglicht. Es hilft mir die Daten besser zu verstehen durch die Analyse der Trends, Zusammenfassung der Daten und nahtlose Erkundung der Datensätze.
+
+![Durschnittliche Intensität pro Stunde](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/4b7e48e8-3337-4cb2-8a66-87b22f20929c)
+
+
+
