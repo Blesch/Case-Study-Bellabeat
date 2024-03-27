@@ -87,7 +87,7 @@ Leitfragen:
 - hourlySteps_merged.csv zeigt die zurückgelegten Schritte stündlich an.
 - hourlyIntensities_merged.csv zeigt die Intenstiät stündlich an.
 3. Bei genauerer Betrachtung ist mir aufgefallen, dass die ersten beiden sowie die letzten drei Tabellen jeweils zusammengeführt werden können.
-4. Null Werte ausfindig machen mit *Conditional Formatting* und bei Bedarf bereinigen.
+4. *Null* Werte ausfindig machen mit *Conditional Formatting* und bei Bedarf bereinigen.
 
 ## Datenexploration und -bereinigung mit R
 Der komplette R Code kann hier angezeigt werden.
