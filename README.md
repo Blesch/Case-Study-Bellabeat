@@ -6,7 +6,7 @@
 In dieser Fallstudie werde ich viele praxisnahe Aufgaben eines Datenanalysten durchführen. Ich spiele die Rolle eines der Mitarbeiter von Bellabeat, einem High-Tech-Hersteller von gesundheitsorientierten Produkten für Frauen. Das Ziel ist es die neu erlernten Fähigkeiten aus dem Google Data Analytics Zertifikat praktisch anzuwenden. Dabei folge ich den erlernten Schritten des Datenanalyseprozesses: Ask, Prepare, Process, Analyze, Share, and Act. 
 
 # Szenario
-Als Mitarbeiter im Marketing Analyse Team von Bellabeat werde ich von unserer Mitbegründerin beauftragt, Nutzungsdaten von Smart-Geräten zu analysieren, um zu verstehen, wie sich diese Nutzer verhalten. Die Erkenntnisse, die ich gewinne, werden die Marketingstrategie des Unternehmens maßgeblich beeinflussen. Ich werde die Analyse dem Führungsteam von Bellabeat präsentieren und dabei meine Empfehlungen für die übergeordnete Marketingstrategie vorstellen.
+Als Mitarbeiter im Marketing Analyse Team von Bellabeat werde ich von unserer Mitgründer beauftragt, Nutzungsdaten von Smart-Geräten zu analysieren, um zu verstehen, wie sich diese Nutzer verhalten. Die Erkenntnisse, die ich gewinne, werden die Marketingstrategie des Unternehmens maßgeblich beeinflussen. Ich werde die Analyse dem Führungsteam von Bellabeat präsentieren und dabei meine Empfehlungen für die übergeordnete Marketingstrategie vorstellen.
 
 ## Über das Unternehmen
 Bellabeat ist ein innovatives High-Tech-Unternehmen, das sich auf die Herstellung gesundheitsorientierter Smart-Produkte spezialisiert hat. Das Produktangebot umfasst Smart-Wellness-Uhren, Aktivitätstracker bis hin zu intelligenten Wasserflaschen, die alle nahtlos über eine eigens entwickelte App miteinander verbunden sind. Durch die Erfassung von Daten zu Aktivitäten, Schlafmustern, Stresslevel und reproduktiver Gesundheit ermöglicht Bellabeat Frauen, tiefgreifende Einblicke in ihre Gesundheit und täglichen Gewohnheiten zu gewinnen. Seit der Gründung im Jahr 2013 hat sich Bellabeat rasant entwickelt und etablierte sich als führendes technologiegetriebenes Wellnessunternehmen, das sich speziell den Bedürfnissen von Frauen widmet.
@@ -38,7 +38,7 @@ Folgende Ergebnisse werde ich abliefern:
 Meine Aufgabe ist es, Nutzungsdaten von Smart-Geräten anderer Marken zu analysieren, um zu verstehen, wie sich diese Nutzer verhalten. Diese Einblicke sollen dann genutzt werden, um Empfehlungen für ein Bellabeat-Produkt in meiner Präsentation zu integrieren.
 
 ## Stakeholder
-- Urška Sršen: Mitbegründerin und Chief Creative Officer von Bellabeat.
+- Urška Sršen: Mitgründerin und Chief Creative Officer von Bellabeat.
 - Sando Mur: Mathematiker und Mitbegründer von Bellabeat; wichtiges Mitglied des Führungsteams von Bellabeat.
 
 # 2. Prepare
