@@ -68,13 +68,6 @@ Leitfragen:
 - Welche Schritte werde ich durchführen, um sicherzustellen, dass die Daten sauber sind?
 - Habe ich den Bereinigungsprozess dokumentiert, sodass ich diesen überprüfen kann?
 
-## Auswahl der Dateien
-- dailyActivity_merged.csv zeigt die Gesamtschritte, Aktivitätslevel und Kalorien für jeden Tag. Das sind wichtige Messwerte für Fitness-Tracker.
-- sleepDay_merged.csv zeigt das Schlafverhalten der Nutzer.
-- hourlyCalories_merged.csv zeigt den Kalorienverbrauch stündlich an.
-- hourlySteps_merged.csv zeigt die zurückgelegten Schritte stündlich an.
-- hourlyIntensities_merged.csv zeigt die Intenstiät stündlich an.
-
 ## Auswahl der Werkzeuge
 - Excel um eine schnelle und einfache Überprüfung der Dateien zu erhalten und mit der Bereinigung der Daten von kleinen Fehlern zu beginnen.
 - Programmiersprache R für die Bereinigung und Transformationen der Daten, damit sie für einfache Analysen organisiert und formatiert sind.
@@ -88,10 +81,12 @@ Leitfragen:
   - hourlyCalories_merged.csv zeigt den Kalorienverbrauch stündlich an.
   - hourlySteps_merged.csv zeigt die zurückgelegten Schritte stündlich an.
   - hourlyIntensities_merged.csv zeigt die Intenstiät stündlich an.
+3. Bei genauerer Betrachtung ist mir aufgefallen, dass die ersten beiden sowie die letzten drei Tabellen jeweils zusammengeführt werden können.
 4. Null Werte ausfindig machen mit *Conditional Formatting* und bei Bedarf bereinigen.
 
 ## Datenexploration und -bereinigung mit R
-Der komplette R Code kann hier angezeigt werden
+Der komplette R Code kann hier angezeigt werden.
+
 1. Wichtige Pakete für die Datenmanipulierung und -bereinigung installieren und laden.  
 ```
 install.packages("tidyverse")
@@ -107,20 +102,23 @@ library(janitor)
 ```
 daily_activity <- read.csv("CS/Fitabase Data 12.4.16-12.5.16/dailyActivity_merged.csv")
 daily_sleep   <- read.csv("CS/Fitabase Data 12.4.16-12.5.16/sleepDay_merged.csv")
+hourly_Calories <- read.csv("CS/Fitabase Data 12.4.16-12.5.16/hourlyCalories_merged.csv")
+hourly_Steps <- read.csv("CS/Fitabase Data 12.4.16-12.5.16/hourlySteps_merged.csv")
+hourly_Intensities <- read.csv("CS/Fitabase Data 12.4.16-12.5.16/hourlyIntensities_merged.csv")
 ```
+
 3. Die Struktur der Datensätze mit `str()` betrachten. 
 ```
-View(daily_activity)
-View(daily_sleep)
-
 str(daily_activity)
 str(daily_sleep)
+str(hourly_Calories)
+str(hourly_Steps)
+str(hourly_Intensities)
 ```
 
-Die erste Spalte "Id" besteht aus einer 10-stelligen Nummer im falschen Format 
-In der Spalte "Activity Date" und "SleepDay" ist das Tracking-Datum hinterlegt. Jedoch sind beide Spalten in beiden Dateien falsch formatiert und werden dementsprechend in ein Datum-Format umgewandelt. 
+Beim Betrachten der Struktur fällt auf das die Formate der Spalten "Id", "ActivityDate", "SleepDay" und "ActivityHour" geändert werden müssen. 
 
-4. Unwichtige Spalten entfernen `subset()` und Namensänderung `rename()` der Spalte `ActivityDate` zu `Date`, um Dateien später zusammenfügen zu können. 
+4. Bevor ich die Tabellen miteinander vereine, werde ich unrelevante Spalten mit `subset()` entfernen. Zusätzlich führe ich eine Namensänderung mit `rename()` der Spalte `ActivityDate` zu `Date` durch.
 ```
 activity <- 
   subset(daily_activity, select = -c(TotalDistance, TrackerDistance, LoggedActivitiesDistance)) %>%
@@ -128,28 +126,38 @@ activity <-
 
 sleep <- 
   separate(daily_sleep, SleepDay, into = c("Date", "Time"), sep = " ")
-
-activity$Date <- mdy(activity$Date)
-activity$Id <- as.character(activity$Id)
-
-sleep$Date <- mdy(sleep$Date)
-sleep$Id <- as.character(sleep$Id)
 ```
 
-5. Beide Tabellen mit `right_join` zusammenfügen und eine neue Spalte `Weekday` erstellen.
+5. Beide Tabellen mit `inner_join` zusammenfügen und eine neue Spalte `Weekday` erstellen.
 ```
 combined_data <- activity %>%
-  right_join(sleep, by=c("Id","Date")) %>%
+  inner_join(sleep, by=c("Id","Date")) %>%
   mutate(Weekday = weekdays(Date))
+  
+hourly_activity <- hourly_Calories %>%
+  inner_join(hourly_Steps, by=c("Id","ActivityHour")) %>%
+  inner_join(hourly_Intensities, by=c("Id","ActivityHour"))
 ```
 
-6. Auf Duplikate `sum(duplicated())` prüfen und dementsprechend löschen `unique()`.
+6. Als nächstes ändere ich die Formate der verschiedenen Tabellen, damit sie auch als Datum erkannt werden.
+```
+combined_data$Date <- mdy(combined_data$Date)
+combined_data$Id <- as.character(combined_data$Id)
+
+hourly_activity$ActivityHour <- mdy_hms(hourly_activity$ActivityHour)
+hourly_activity$Id <- as.character(hourly_activity$Id)
+```
+
+7. Auf Duplikate `sum(duplicated())` prüfen und dementsprechend löschen `unique()`.
 ```
 sum(duplicated(combined_data))
 combined_data <- unique(combined_data)
+
+sum(duplicated(hourly_activity))
+combined_data <- unique(hourly_activity)
 ```
 
-7. Wochentage ordnen.
+7. Zuletzt werden noch die Wochentage geordnet.
 ```
 combined_data$Weekday <-
 factor(combined_data$Weekday, levels=c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"))
@@ -158,6 +166,7 @@ factor(combined_data$Weekday, levels=c("Sunday", "Monday", "Tuesday", "Wednesday
 8. Datensatz exportieren mit `write()`.
 ```
 write.csv(combined_data, "CS/Fitabase Data 12.4.16-12.5.16/combined_data.csv")
+write.csv(hourly_activity, "CS/Fitabase Data 12.4.16-12.5.16/hourly_activity.csv")
 ```
 
 # 4. Analyze/Share
