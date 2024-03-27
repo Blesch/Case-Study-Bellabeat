@@ -53,7 +53,12 @@ Folgende Fragen unterstützen mich in dieser Phase:
 - Gibt es irgendwelche Probleme mit den Daten?
   
 ## Informationen über die Daten
-Der Kaggle-Datensatz enthält Smart-Health-Daten von persönlichen Fitness-Trackern von dreißig Fitbit-Nutzern. Er wurde von Teilnehmern einer über "Amazon Mechanical Turk" verteilten Umfrage zwischen dem 03.12.2016 und dem 05.12.2016 generiert. Die Daten auf Kaggle enthalten 30 verschiedene CSV Dateien mit zwei verschiedenen Ordnern vom 03.12.16 bis 04.11.16 und vom 04.12.16 bis 05.12.16. Dreißig geeignete Fitbit-Nutzer haben der Einreichung persönlicher Tracker-Daten zugestimmt. Die Daten enthalten Informationen über tägliche Aktivitäten, Schritte, Schlaf und Herzfrequenz, die zur Erforschung der Gewohnheiten der Nutzer verwendet werden können. Die hochgeladenen Daten sind CCO-lizenziert, welches sicherstellt, dass die Urheberrechte abgegeben wurden und die Daten zur öffentlichen Nutzung zur Verfügung stehen. Der Ursprung der Daten kann nachverfolgt werden. Für die spätere Bearbeitung werden die Ordner auf meinem Computer unter Dokumente unter dem Ordner Case_Study_Bellabeat abgespeichert. 
+- Der Kaggle-Datensatz enthält Smart-Health-Daten von persönlichen Fitness-Trackern von dreißig Fitbit-Nutzern.
+- Er wurde von Teilnehmern einer über "Amazon Mechanical Turk" verteilten Umfrage zwischen dem 03.12.2016 und dem 05.12.2016 generiert.
+- Die Daten auf Kaggle enthalten 30 verschiedene CSV Dateien mit zwei verschiedenen Ordnern vom 03.12.16 bis 04.11.16 und vom 04.12.16 bis 05.12.16.
+- Dreißig geeignete Fitbit-Nutzer haben der Einreichung persönlicher Tracker-Daten zugestimmt. Die Daten enthalten Informationen über tägliche Aktivitäten, Schritte, Schlaf und Herzfrequenz, die zur Erforschung der Gewohnheiten der Nutzer verwendet werden können.
+- Die hochgeladenen Daten sind CCO-lizenziert, welches sicherstellt, dass die Urheberrechte abgegeben wurden und die Daten zur öffentlichen Nutzung zur Verfügung stehen. Der Ursprung der Daten kann nachverfolgt werden.
+- Für die spätere Bearbeitung werden die Ordner auf meinem Computer unter Dokumente unter dem Ordner Case_Study_Bellabeat abgespeichert. 
 
 ## Limitierungen
 - Die Datensätze weisen lediglich eine geringe Stichprobengröße von 30 Nutzern auf. Für ein umfassenderes Verständnis des Nutzerverhaltens wäre eine größere Stichprobengröße von Vorteil.
@@ -76,11 +81,11 @@ Leitfragen:
 ## Ersten Überblick mit Excel schaffen
 1. Betrachtung der Daten in Excel um einen Überblick zu schaffen und relvante Datensätze auszuwählen.
 2. Folgende Dateien wurden für die weitere Analyse ausgewählt:
-   - dailyActivity_merged.csv zeigt die Gesamtschritte, Aktivitätslevel und Kalorien für jeden Tag. Das sind wichtige Messwerte für Fitness-Tracker.
-  - sleepDay_merged.csv zeigt das Schlafverhalten der Nutzer.
-  - hourlyCalories_merged.csv zeigt den Kalorienverbrauch stündlich an.
-  - hourlySteps_merged.csv zeigt die zurückgelegten Schritte stündlich an.
-  - hourlyIntensities_merged.csv zeigt die Intenstiät stündlich an.
+- dailyActivity_merged.csv zeigt die Gesamtschritte, Aktivitätslevel und Kalorien für jeden Tag. Das sind wichtige Messwerte für Fitness-Tracker.
+- sleepDay_merged.csv zeigt das Schlafverhalten der Nutzer.
+- hourlyCalories_merged.csv zeigt den Kalorienverbrauch stündlich an.
+- hourlySteps_merged.csv zeigt die zurückgelegten Schritte stündlich an.
+- hourlyIntensities_merged.csv zeigt die Intenstiät stündlich an.
 3. Bei genauerer Betrachtung ist mir aufgefallen, dass die ersten beiden sowie die letzten drei Tabellen jeweils zusammengeführt werden können.
 4. Null Werte ausfindig machen mit *Conditional Formatting* und bei Bedarf bereinigen.
 
@@ -116,7 +121,7 @@ str(hourly_Steps)
 str(hourly_Intensities)
 ```
 
-Beim Betrachten der Struktur fällt auf das die Formate der Spalten "Id", "ActivityDate", "SleepDay" und "ActivityHour" geändert werden müssen. 
+Beim Betrachten der Struktur ist ersichtlich, dass die Formate der Spalten "Id", "ActivityDate", "SleepDay" und "ActivityHour" angepasst werden müssen.
 
 4. Bevor ich die Tabellen miteinander vereine, werde ich unrelevante Spalten mit `subset()` entfernen. Zusätzlich führe ich eine Namensänderung mit `rename()` der Spalte `ActivityDate` zu `Date` durch.
 ```
@@ -139,7 +144,7 @@ hourly_activity <- hourly_Calories %>%
   inner_join(hourly_Intensities, by=c("Id","ActivityHour"))
 ```
 
-6. Als nächstes ändere ich die Formate der verschiedenen Tabellen, damit sie auch als Datum erkannt werden.
+6. Als nächstes werde ich die Formate der verschiedenen Tabellen ändern, um sicherzustellen, dass sie korrekt als Datum erkannt werden.
 ```
 combined_data$Date <- mdy(combined_data$Date)
 combined_data$Id <- as.character(combined_data$Id)
@@ -148,7 +153,7 @@ hourly_activity$ActivityHour <- mdy_hms(hourly_activity$ActivityHour)
 hourly_activity$Id <- as.character(hourly_activity$Id)
 ```
 
-7. Auf Duplikate `sum(duplicated())` prüfen und dementsprechend löschen `unique()`.
+7. Auf Duplikate prüfen und dementsprechend löschen.
 ```
 sum(duplicated(combined_data))
 combined_data <- unique(combined_data)
@@ -170,7 +175,7 @@ write.csv(hourly_activity, "CS/Fitabase Data 12.4.16-12.5.16/hourly_activity.csv
 ```
 
 # 4. Analyze/Share
-Die Daten wurden nun bereinigt und aufbereitet. Für die Analyse nutze ich Tableau, ein einfach zu nutzendes Tool, das neben der Visualisierung auch die Durchführung statistischer Datenanalysen ermöglicht. Durch die Analyse der Trends, Zusammenfassung der Daten und nahtlose Erkundung der Datensätze hilft es mir die Daten besser zu verstehen.
+Die Daten wurden nun bereinigt und aufbereitet. Für die Analyse verwende ich Tableau, ein benutzerfreundliches Tool, das nicht nur Visualisierungen ermöglicht, sondern auch statistische Datenanalysen durchführt. Durch die Analyse der Trends, die Zusammenfassung der Daten und die nahtlose Erkundung der Datensätze unterstützt mich Tableau dabei, ein besseres Verständnis der Daten zu erlangen.
 
 Als erstes möchte ich herausfinden, wie aktiv die Nutzer während der Woche waren. Die Daten zeigen, dass Nutzer im Durchschnitt 8.500 Schritte pro Tag zurücklegen. Weiterhin ist zu erkennen, dass am Sonntag die wenigsten und am Samstag die meisten Schritte unternommen wurden. Außerdem ist zu beobachten, dass die Nutzer am Montag und Dienstag mehr Schritte zurücklegen als von Mittwoch bis Freitag.
 
@@ -193,12 +198,12 @@ Zu guter Letzte betrachte ich die Schlafdaten. Im Durchschnitt schlafen die Nutz
 ![Durchschn  Schlafdauer pro Wochentag (1)](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/db41711d-7798-42e0-9f70-f3d90640d0d9)
 
 # 5. Act
-In der letzten Phase möchte ich die Fragen welche ich mir in der ersten Phase Ask gestellt habe, beantworten. 
+In der letzten Phase beabsichtige ich, die Fragen zu beantworten, die ich mir in der ersten Phase gestellt habe.
 - Welche Trends gibt es bei der Nutzung von Smart-Geräten?
 - Wie könnten diese Trends auf Bellabeat-Kunden anwendbar sein?
 - Wie könnten diese Trends die Marketingstrategie von Bellabeat beeinflussen?
   
-## Fazit
+## Erkenntnisse
 - Die Daten zeigen deutlich, dass die Fitbit-Nutzer samstags sowie zu Beginn der Woche am aktivsten sind, während am Sonntag eine deutlich geringere Aktivität zu verzeichnen ist. Eine mögliche Erklärung hierfür könnte sein, dass die Nutzer samstags nicht arbeiten müssen und dadurch generell aktiver sind. Der Sonntag wird hingegen von vielen als Ruhetag genutzt, um sich auf die anstehende Arbeitswoche vorzubereiten.
 - Am Montag und Dienstag zeigen sich die Nutzer aktiver als von Mittwoch bis Freitag. Dies lässt sich möglicherweise dadurch erklären, dass die Nutzer zu Beginn der Woche noch vom Wochenende energiegeladen und motiviert sind, was im Verlauf der Woche abnimmt.
 -Zudem belegen die Daten, dass Nutzer, die sich mehr bewegen, auch tendenziell mehr Kalorien verbrennen. Dies unterstreicht, dass der Körper umso mehr Energie benötigt, je höher das Aktivitätsniveau ist, was zu einem höheren Kalorienverbrauch führt.
@@ -206,11 +211,11 @@ In der letzten Phase möchte ich die Fragen welche ich mir in der ersten Phase A
 - Im Durchschnitt schlafen die Nutzer sieben Stunden pro Tag während der Woche. Besonders am Sonntag finden sie mit durchschnittlich etwa 7,5 Stunden den meisten Schlaf. Es lässt sich ein Zusammenhang zwischen der Schlafdauer und dem Aktivitätslevel am Sonntag erkennen, was vermutlich daran liegt, dass der Sonntag von den meisten Menschen als Tag zur Entspannung genutzt wird.
 
 ## Handlungsempfehlung 
-Meine Handlungsempfehlung wird sich auf die Produkte *Leaf* (Fitness-Tracker) und *Time* (Fitness-Uhr) sowie die *Bellabeat App* beziehen. Es ist wichtig zu beachten, dass die Daten mit Limitierungen kommen. Zum einem bestehen die gesammelten Informationen aus einem kleinem Zeitraum von nur zwei Monaten. Des Weiteren wurden nur dreißig Nutzer analysiert. Die daraus resultierenden Handlungsempfehlungen können eine erste Richtung für das Bellabeat Team darstellen. Es wird stark empfohlen größere Auswertungen durchzuführen. Entweder von anderen Mitbewerbern oder am Besten von den eigenen Nutzern.
+Meine Handlungsempfehlungen werden sich auf die Produkte Leaf (Fitness-Tracker) und Time (Fitness-Uhr) sowie die Bellabeat App konzentrieren. Es ist wichtig zu beachten, dass die vorliegenden Daten einige Einschränkungen aufweisen. Zum einen stammen die gesammelten Informationen aus einem begrenzten Zeitraum von nur zwei Monaten. Des Weiteren wurden lediglich Daten von dreißig Nutzern analysiert. Die resultierenden Handlungsempfehlungen können als erste Richtlinien für das Bellabeat-Team dienen. Es wird jedoch dringend empfohlen, umfangreichere Auswertungen durchzuführen, entweder mit einer größeren Stichprobengröße oder idealerweise mit Daten von eigenen Nutzern.
 
-- Bellabeat kann Benachrichtigungen an seine Nutzer senden, um diese daran zu erinnern aktiv zu werden. Dabei können besonders die aktivgeringen Tage fokussiert werden um Nutzer bei der Motiviation zu untersützen. Es könnten dem Nutzer gute Beispiele seiner eigenen Bestleistungen gezeigt werden um ihn daran zu erinnern, dass es für ihn möglich ist.
-- Diese Benachrichtungen sollten dann zu den Aktiviätsstarken Tageszeiten geesndet werden. Eine Erinnerung während der Arbeitszeit wird wahrscheinlich bis zum Feierabend bereits vergessen.
-- Bellabeat kann seinen Nutzern auch Erinnerungen für Einschlafzeiten senden um die durschnittliche Schlafzeit zu verbessern.
-- Das Marekting Team könnte sich Ideen einfallen lassen wie sie die Nutzer mit Aktionen 
+- Bellabeat-Produkte könnten Aktivitäts Erinnerungen zu den Zeiten senden, in denen die Nutzer am häufigsten aktiv sind, um deren Gewohnheiten langfristig zu stärken und die Kontinuität zu fördern. Was wiederum die Bindung zu Bellabeat Produkten erhöhen kann.
+- Bellabeat könnte individuelle Programme für seine Nutzer erstellen. Zum Beispiel könnten an den Tagen, an denen die Nutzer am aktivsten sind, besonders intensive Sportprogramme empfohlen werden, um die schwachen Tage auszugleichen. 
+- Bellabeat könnte seine Nutzer darauf aufmerksam machen, wenn sie zu wenig Schlaf bekommen haben, um ihr Bewusstsein für ihre Schlafgewohnheiten zu schärfen.
+- Das Marketing-Team könnte regelmäßig Marketingaktionen in der App veranstalten, um Nutzer aktiv zu halten und sie für weitere Produkte zu begeistern. Durch das Erreichen von Meilensteinen, die Teilnahme an bestimmten Sportprogrammen oder das Erreichen anderer Ziele könnten Nutzer Punkte sammeln. Diese Punkte könnten als eine Art digitale Währung fungieren und in Rabatte für neue Geräte, Online-Programme oder andere Produkte investiert werden.
 
 
