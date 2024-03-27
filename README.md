@@ -34,7 +34,7 @@ Folgende Ergebnisse werde ich abliefern:
 - Unterstützende Visualisierungen und Schlüsselerkenntnisse.
 - Wichtigste Empfehlungen basierend auf der Analyse.
 
-## Geschäftsaufgabe
+## Problemstellung
 Meine Aufgabe ist es, Nutzungsdaten von Smart-Geräten anderer Marken zu analysieren, um zu verstehen, wie sich diese Nutzer verhalten. Diese Einblicke sollen dann genutzt werden, um Empfehlungen für ein Bellabeat-Produkt in meiner Präsentation zu integrieren.
 
 ## Stakeholder
