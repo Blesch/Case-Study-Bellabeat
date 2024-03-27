@@ -177,13 +177,9 @@ write.csv(hourly_activity, "CS/Fitabase Data 12.4.16-12.5.16/hourly_activity.csv
 # 4. Analyze/Share
 Die Daten wurden nun bereinigt und aufbereitet. Für die Analyse verwende ich Tableau, ein benutzerfreundliches Tool, das nicht nur Visualisierungen ermöglicht, sondern auch statistische Datenanalysen durchführt. Durch die Analyse der Trends, die Zusammenfassung der Daten und die nahtlose Erkundung der Datensätze unterstützt mich Tableau dabei, ein besseres Verständnis der Daten zu erlangen.
 
-Als erstes möchte ich herausfinden, wie aktiv die Nutzer während der Woche waren. Die Daten zeigen, dass Nutzer im Durchschnitt 8.500 Schritte pro Tag zurücklegten. Weiterhin ist zu erkennen, dass am Sonntag die wenigsten und am Samstag die meisten Schritte unternommen wurden. Außerdem ist zu beobachten, dass die Nutzer am Montag und Dienstag mehr Schritte zurücklegen als von Mittwoch bis Freitag.
+Als erstes möchte ich herausfinden, wie aktiv die Nutzer während der Woche waren. Die Daten zeigen, dass Nutzer im Durchschnitt 8.500 Schritte pro Tag zurücklegen. Weiterhin ist zu erkennen, dass am Sonntag die wenigsten und am Samstag die meisten Schritte unternommen werden. Außerdem ist zu beobachten, dass die Nutzer am Montag und Dienstag mehr Schritte zurücklegen als von Mittwoch bis Freitag.
 
 ![Durchschn  Schritte pro Wochentag (1)](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/149a4813-f21d-4bbb-b176-68c949216860)
-
-Die Daten über die durchschnittlichen Aktivitäten in Minuten pro Wochentag bestätigen dies zusätzlich.
-
-![Durchschn  Aktivität pro Wochentag](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/48b01456-2845-4fd9-88c5-957d4eab7ce1)
 
 Außerdem bestätigen die Daten, wie erwartet, dass mehr Schritte zu einem höheren Kalorienverbrauch führen können. Es kann ein klarer Trend zwischen Menge der Schritte und Kalorienverbrauch beobachtet werden. 
 
