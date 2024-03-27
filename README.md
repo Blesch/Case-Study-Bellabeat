@@ -3,7 +3,10 @@
 ![Bild-Tracker_W](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/fce68976-2c95-45fd-b929-42882a59b5a0)
 
 # Einleitung
-In dieser Fallstudie werde ich viele praxisnahe Aufgaben eines Datenanalysten durchführen. Ich spiele die Rolle eines der Mitarbeiter von Bellabeat, einem High-Tech-Hersteller von gesundheitsorientierten Produkten für Frauen. Das Ziel ist es die neu erlernten Fähigkeiten aus dem Google Data Anayltics Zertifikat praktisch anzuwenden. Dabei folge ich den erlernten Schritten des Datenanalyseprozesses: Ask, Prepare, Process, Analyze, Share, and Act. Meine Aufgabe ist es, Nutzungsdaten von Smart-Geräten zu analysieren, um zu verstehen, wie sich diese Nutzer verhalten.
+In dieser Fallstudie werde ich viele praxisnahe Aufgaben eines Datenanalysten durchführen. Ich spiele die Rolle eines der Mitarbeiter von Bellabeat, einem High-Tech-Hersteller von gesundheitsorientierten Produkten für Frauen. Das Ziel ist es die neu erlernten Fähigkeiten aus dem Google Data Anayltics Zertifikat praktisch anzuwenden. Dabei folge ich den erlernten Schritten des Datenanalyseprozesses: Ask, Prepare, Process, Analyze, Share, and Act. 
+
+# Szenario
+Als Mitarbeiter im Marketing Analyse Team von Bellabeat werde ich von unserer Mitbegründerin beauftragt, Nutzungsdaten von Smart-Geräten zu analysieren, um zu verstehen, wie sich diese Nutzer verhalten. Die Erkenntnisse, die ich gewinne, werden die Marketingstrategie des Unternehmens maßgeblich beeinflussen. Ich werde die Analyse dem Führungsteam von Bellabeat präsentieren und dabei meine Empfehlungen für die übergeordnete Marketingstrategie vorstellen.
 
 ## Über das Unternehmen
 Bellabeat ist ein innovatives High-Tech-Unternehmen, das sich auf die Herstellung gesundheitsorientierter Smart-Produkte spezialisiert hat. Das Produktangebot umfasst Smart-Wellness-Uhren, Aktivitätstracker bis hin zu intelligenten Wasserflaschen, die alle nahtlos über eine eigens entwickelte App miteinander verbunden sind. Durch die Erfassung von Daten zu Aktivitäten, Schlafmustern, Stresslevel und reproduktiver Gesundheit ermöglicht Bellabeat Frauen, tiefgreifende Einblicke in ihre Gesundheit und täglichen Gewohnheiten zu gewinnen. Seit der Gründung im Jahr 2013 hat sich Bellabeat rasant entwickelt und etablierte sich als führendes technologiegetriebenes Wellnessunternehmen, das sich speziell den Bedürfnissen von Frauen widmet.
@@ -16,12 +19,14 @@ Bellabeat ist ein innovatives High-Tech-Unternehmen, das sich auf die Herstellun
 - **Bellabeat-Mitgliedschaft**: Bellabeat bietet auch ein abonnementbasiertes Mitgliedschaftsprogramm für Nutzer an. Die Mitgliedschaft gibt den Nutzern rund um die Uhr Zugang zu vollständig personalisierter Anleitung zu Ernährung, Aktivität, Schlaf, Gesundheit und Schönheit sowie Achtsamkeit, basierend auf ihrem Lebensstil und Ziel.
 
 # 1. Ask
+In der ersten Phase geht es darum, das zugrunde liegende Problem präzise zu definieren und zu verstehen. Dabei identifiziere ich die spezifische Geschäftsaufgabe sowie alle relevanten Stakeholder. Es ist wichtig, die für das Projekt bedeutenden Stakeholder vor der Analyse zu bestimmen, um später die Präsentation entsprechend ausrichten zu können. Zum Beispiel haben Führungskräfte möglicherweise andere Interessen als direkte Teammitglieder, auch unterschiedliche Abteilungen können unterschiedliche Bedürfnisse besitzen.  
+
 Folgende Fragen leiten mich durch das Projekt:
 - Welche Trends gibt es bei der Nutzung von Smart-Geräten?
 - Wie könnten diese Trends auf Bellabeat-Kunden anwendbar sein?
 - Wie könnten diese Trends die Marketingstrategie von Bellabeat beeinflussen?
 
-Dabei erstelle ich folgende Deliverables:
+Folgende Ergebnisse werde ich abliefern:
 - Eine klare Zusammenfassung der Geschäftsaufgabe.
 - Eine Beschreibung aller verwendeten Datenquellen.
 - Die Dokumentation jeglicher Bereinigung oder Manipulation von Daten.
@@ -29,37 +34,30 @@ Dabei erstelle ich folgende Deliverables:
 - Unterstützende Visualisierungen und Schlüsselerkenntnisse.
 - Wichtigste Empfehlungen basierend auf der Analyse.
 
-Bevor ich mit der Analyse beginne, ist es entscheidend, das zugrunde liegende Problem genau zu definieren. Dies umfasst die Identifizierung der spezifischen Geschäftsaufgabe und aller relevanten Stakeholder, um sicherzustellen, dass die Analyseergebnisse gezielt und effektiv zur Lösungsfindung beitragen.
-
 ## Geschäftsaufgabe
 Meine Aufgabe ist es, Nutzungsdaten von Smart-Geräten anderer Marken zu analysieren, um zu verstehen, wie sich diese Nutzer verhalten. Diese Einblicke sollen dann genutzt werden, um Empfehlungen für ein Bellabeat-Produkt in meiner Präsentation zu integrieren.
 
 ## Stakeholder
-- **Urška Sršen**: Mitbegründerin und Chief Creative Officer von Bellabeat.
-- **Sando Mur**: Mathematiker und Mitbegründer von Bellabeat; wichtiges Mitglied des Führungsteams von Bellabeat.
-- **Bellabeat Marketinganalyseteam**: Ein Team von Datenanalysten, verantwortlich für die Sammlung, Analyse und Berichterstattung von Daten, die Bellabeats Marketingstrategie leiten.
+- Urška Sršen: Mitbegründerin und Chief Creative Officer von Bellabeat.
+- Sando Mur: Mathematiker und Mitbegründer von Bellabeat; wichtiges Mitglied des Führungsteams von Bellabeat.
 
 # 2. Prepare
-Nachdem ich das zu lösende Business Problem definiert habe, kann ich die mir zur Verfügung stehenden Daten betrachten und vorbereiten. 
-Ich werde mit den FitBit Fitness Tracker-Daten auf [Kaggle](https://www.kaggle.com/datasets/arashnic/fitbit) arbeiten.
+Nachdem ich das zu lösende Business Problem definiert habe, kann ich die mir zur Verfügung stehenden Daten betrachten und vorbereiten. Hierfür werde mit folgenden FitBit Fitness Tracker-Daten auf [Kaggle](https://www.kaggle.com/datasets/arashnic/fitbit) arbeiten.
 
-Folgende Fragen sollen mir dabei helfen:
+Folgende Fragen unterstützen mich in dieser Phase:
 - Wo sind meine Daten gespeichert?
 - Wie sind die Daten organisiert?
 - Gibt es Probleme mit Bias oder der Glaubwürdigkeit in diesen Daten?
 - Wie sieht es mit der Lizenzierung, Datenschutz, Sicherheit und Zugänglichkeit aus?
-- Wie haben Sie die Integrität der Daten überprüft?
 - Wie helfen mir diese Daten meine Fragen zu beantworten?
 - Gibt es irgendwelche Probleme mit den Daten?
   
 ## Informationen über die Daten
-Der Kaggle-Datensatz enthält Smart-Health-Daten von persönlichen Fitness-Trackern von dreißig Fitbit-Nutzern. Er wurde von Teilnehmern einer über "Amazon Mechanical Turk" verteilten Umfrage zwischen dem 03.12.2016 und dem 05.12.2016 generiert. Die Daten auf Kaggle enthalten 30 verschiedene CSV Dateien mit zwei verschiedenen Ordnern vom 03.12.16 bis 04.11.16 und vom 04.12.16 bis 05.12.16. 
-Dreißig geeignete Fitbit-Nutzer haben der Einreichung persönlicher Tracker-Daten zugestimmt. Die Daten enthalten Informationen über tägliche Aktivitäten, Schritte, Schlaf und Herzfrequenz, die zur Erforschung der Gewohnheiten der Nutzer verwendet werden können. Die hochgeladenen Daten sind CCO-lizenziert, welches sicherstellt, dass die Urheberrechte abgegeben wurden und die Daten zur öffentlichen Nutzung zur Verfügung stehen. Der Ursprung der Daten kann nachverfolgt werden.
-Für die spätere Bearbeitung werden die Ordner auf meinem Computer unter Dokumente unter dem Ordner Case_Study_Bellabeat abgespeichert. 
+Der Kaggle-Datensatz enthält Smart-Health-Daten von persönlichen Fitness-Trackern von dreißig Fitbit-Nutzern. Er wurde von Teilnehmern einer über "Amazon Mechanical Turk" verteilten Umfrage zwischen dem 03.12.2016 und dem 05.12.2016 generiert. Die Daten auf Kaggle enthalten 30 verschiedene CSV Dateien mit zwei verschiedenen Ordnern vom 03.12.16 bis 04.11.16 und vom 04.12.16 bis 05.12.16. Dreißig geeignete Fitbit-Nutzer haben der Einreichung persönlicher Tracker-Daten zugestimmt. Die Daten enthalten Informationen über tägliche Aktivitäten, Schritte, Schlaf und Herzfrequenz, die zur Erforschung der Gewohnheiten der Nutzer verwendet werden können. Die hochgeladenen Daten sind CCO-lizenziert, welches sicherstellt, dass die Urheberrechte abgegeben wurden und die Daten zur öffentlichen Nutzung zur Verfügung stehen. Der Ursprung der Daten kann nachverfolgt werden. Für die spätere Bearbeitung werden die Ordner auf meinem Computer unter Dokumente unter dem Ordner Case_Study_Bellabeat abgespeichert. 
 
 ## Limitierungen
-- Die Datensätze haben nur eine kleine Stichprobengröße von 30 Nutzern. Für ein besseres Verständnis des Verhaltens der Nutzer wäre eine größere Stichprobengröße vorteilhaft.
-- Der Zeitraum der aufgenommen Daten ist nur von März bis Mai. Um die Gewohnheiten der Nutzer noch besser anaylsieren zu können, sind längere Zeiträume notwendig. Besonders um jährliche saisonabhängige Besonderheiten erkennen zu können. 
+- Die Datensätze weisen lediglich eine geringe Stichprobengröße von 30 Nutzern auf. Für ein umfassenderes Verständnis des Nutzerverhaltens wäre eine größere Stichprobengröße von Vorteil.
+- Der aufgenommene Datenzeitraum erstreckt sich lediglich von März bis Mai. Um die Gewohnheiten der Nutzer gründlicher zu analysieren, sind längere Zeiträume erforderlich. Insbesondere um saisonale Trends und jährliche Muster besser zu erkennen.
 - Die Daten stammen von verschiedenen Typen von Fitbit-Trackern; dies könnte zu unterschiedlichen Datenausgaben führen.
 
 # 3. Process
@@ -68,22 +66,29 @@ In dieser Phase beginne ich mit der Verarbeitung der Daten für die weitere Anal
 Leitfragen:
 - Welche Werkzeuge wähle ich und warum?
 - Welche Schritte werde ich durchführen, um sicherzustellen, dass die Daten sauber sind?
-- Habe ich den Bereinigungsprozess dokumentiert, sodass Sie diesen überprüfen kann?
+- Habe ich den Bereinigungsprozess dokumentiert, sodass ich diesen überprüfen kann?
 
-## Auswahl der Dateien und Werkzeuge
+## Auswahl der Dateien
 - dailyActivity_merged.csv zeigt die Gesamtschritte, Aktivitätslevel und Kalorien für jeden Tag. Das sind wichtige Messwerte für Fitness-Tracker.
 - sleepDay_merged.csv zeigt das Schlafverhalten der Nutzer.
+- hourlyCalories_merged.csv zeigt den Kalorienverbrauch stündlich an.
+- hourlySteps_merged.csv zeigt die zurückgelegten Schritte stündlich an.
+- hourlyIntensities_merged.csv zeigt die Intenstiät stündlich an.
 
-- **Excel** um eine schnelle und einfache Überprüfung der Dateien zu erhalten und mit der Bereinigung der Daten von kleinen Fehlern zu beginnen.
-- **Programmiersprache R** für die Bereinigung und Transformationen der Daten, damit sie für einfache Analysen organisiert und formatiert sind.
-- **Tableau** um dynamische und anspruchsvolle Visualisierungen zu erstellen.
+## Auswahl der Werkzeuge
+- Excel um eine schnelle und einfache Überprüfung der Dateien zu erhalten und mit der Bereinigung der Daten von kleinen Fehlern zu beginnen.
+- Programmiersprache R für die Bereinigung und Transformationen der Daten, damit sie für einfache Analysen organisiert und formatiert sind.
+- Tableau um dynamische und anspruchsvolle Visualisierungen zu erstellen.
 
 ## Ersten Überblick mit Excel schaffen
-1. Betrachtung der Daten in Excel
-2. Folgende Dateien wurden für die Analyse ausgewählt:
-- dailyActivity_merged.csv zeigt die Gesamtschritte, Aktivitätslevel und Kalorien für jeden Tag. Das sind wichtige Messwerte für Fitness-Tracker
-- sleepDay_merged.csv zeigt das Schlafverhalten der Nutzer
-3. Null Werte ausfindig machen mit *Conditional Formatting* und bei Bedarf bereinigen
+1. Betrachtung der Daten in Excel um einen Überblick zu schaffen und relvante Datensätze auszuwählen.
+2. Folgende Dateien wurden für die weitere Analyse ausgewählt:
+   - dailyActivity_merged.csv zeigt die Gesamtschritte, Aktivitätslevel und Kalorien für jeden Tag. Das sind wichtige Messwerte für Fitness-Tracker.
+  - sleepDay_merged.csv zeigt das Schlafverhalten der Nutzer.
+  - hourlyCalories_merged.csv zeigt den Kalorienverbrauch stündlich an.
+  - hourlySteps_merged.csv zeigt die zurückgelegten Schritte stündlich an.
+  - hourlyIntensities_merged.csv zeigt die Intenstiät stündlich an.
+4. Null Werte ausfindig machen mit *Conditional Formatting* und bei Bedarf bereinigen.
 
 ## Datenexploration und -bereinigung mit R
 Der komplette R Code kann hier angezeigt werden
@@ -156,9 +161,9 @@ write.csv(combined_data, "CS/Fitabase Data 12.4.16-12.5.16/combined_data.csv")
 ```
 
 # 4. Analyze/Share
-Die Daten wurden nun bereinigt und aufbereitet. Für die Analyse nutze ich Tableau, ein einfach zu nutzendes Tool, das neben der Visualisierung auch die Durchführung statistischer Datenanalysen ermöglicht. Es hilft mir die Daten besser zu verstehen durch die Analyse der Trends, Zusammenfassung der Daten und nahtlose Erkundung der Datensätze.
+Die Daten wurden nun bereinigt und aufbereitet. Für die Analyse nutze ich Tableau, ein einfach zu nutzendes Tool, das neben der Visualisierung auch die Durchführung statistischer Datenanalysen ermöglicht. Durch die Analyse der Trends, Zusammenfassung der Daten und nahtlose Erkundung der Datensätze hilft es mir die Daten besser zu verstehen.
 
-Im ersten Schritt möchte ich herausfinden, wie aktiv die Nutzer während der Woche waren. Die Daten zeigen, dass Nutzer im Durchschnitt 8.500 Schritte pro Tag zurücklegen. Weiterhin ist zu erkennen, dass am Sonntag die wenigsten und am Samstag die meisten Schritte unternommen werden. Außerdem ist zu beobachten, dass die Nutzer am Montag und Dienstag mehr Schritte zurücklegen als von Mittwoch bis Freitag.
+Als erstes möchte ich herausfinden, wie aktiv die Nutzer während der Woche waren. Die Daten zeigen, dass Nutzer im Durchschnitt 8.500 Schritte pro Tag zurücklegen. Weiterhin ist zu erkennen, dass am Sonntag die wenigsten und am Samstag die meisten Schritte unternommen wurden. Außerdem ist zu beobachten, dass die Nutzer am Montag und Dienstag mehr Schritte zurücklegen als von Mittwoch bis Freitag.
 
 ![Durchschn  Schritte pro Wochentag (1)](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/149a4813-f21d-4bbb-b176-68c949216860)
 
