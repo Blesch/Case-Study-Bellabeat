@@ -3,7 +3,7 @@
 ![Bild-Tracker_W](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/fce68976-2c95-45fd-b929-42882a59b5a0)
 
 # Einleitung
-In dieser Fallstudie werde ich viele praxisnahe Aufgaben eines Datenanalysten durchführen. Ich spiele die Rolle eines der Mitarbeiter von Bellabeat, einem High-Tech-Hersteller von gesundheitsorientierten Produkten für Frauen. Das Ziel ist es die neu erlernten Fähigkeiten aus dem Google Data Anayltics Zertifikat praktisch anzuwenden. Dabei folge ich den erlernten Schritten des Datenanalyseprozesses: Ask, Prepare, Process, Analyze, Share, and Act. 
+In dieser Fallstudie werde ich viele praxisnahe Aufgaben eines Datenanalysten durchführen. Ich spiele die Rolle eines der Mitarbeiter von Bellabeat, einem High-Tech-Hersteller von gesundheitsorientierten Produkten für Frauen. Das Ziel ist es die neu erlernten Fähigkeiten aus dem Google Data Analytics Zertifikat praktisch anzuwenden. Dabei folge ich den erlernten Schritten des Datenanalyseprozesses: Ask, Prepare, Process, Analyze, Share, and Act. 
 
 # Szenario
 Als Mitarbeiter im Marketing Analyse Team von Bellabeat werde ich von unserer Mitbegründerin beauftragt, Nutzungsdaten von Smart-Geräten zu analysieren, um zu verstehen, wie sich diese Nutzer verhalten. Die Erkenntnisse, die ich gewinne, werden die Marketingstrategie des Unternehmens maßgeblich beeinflussen. Ich werde die Analyse dem Führungsteam von Bellabeat präsentieren und dabei meine Empfehlungen für die übergeordnete Marketingstrategie vorstellen.
