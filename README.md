@@ -35,7 +35,7 @@ Folgende Ergebnisse werde ich abliefern:
 - Wichtigste Empfehlungen basierend auf der Analyse.
 
 ## Problemstellung
-Meine Aufgabe ist es, Nutzungsdaten von Smart-Geräten anderer Marken zu analysieren, um zu verstehen, wie sich diese Nutzer verhalten. Diese Einblicke sollen dann genutzt werden, um Empfehlungen für ein Bellabeat-Produkt in meiner Präsentation zu integrieren.
+Meine Aufgabe ist es, Nutzungsdaten von Smart-Geräten einer anderen Marke (Fitbit) zu analysieren, um zu verstehen, wie sich diese Nutzer verhalten. Diese Einblicke sollen dann genutzt werden, um Empfehlungen für ein Bellabeat-Produkt in meiner Präsentation zu integrieren.
 
 ## Stakeholder
 - Urška Sršen: Mitgründerin und Chief Creative Officer von Bellabeat.
