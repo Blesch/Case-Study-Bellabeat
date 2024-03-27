@@ -79,7 +79,7 @@ Leitfragen:
 - Tableau um dynamische und anspruchsvolle Visualisierungen zu erstellen.
 
 ## Ersten Überblick mit Excel schaffen
-1. Betrachtung der Daten in Excel um einen Überblick zu schaffen und relvante Datensätze auszuwählen.
+1. Betrachtung der Daten in Excel um einen Überblick zu schaffen und relevante Datensätze auszuwählen.
 2. Folgende Dateien wurden für die weitere Analyse ausgewählt:
 - dailyActivity_merged.csv zeigt die Gesamtschritte, Aktivitätslevel und Kalorien für jeden Tag. Das sind wichtige Messwerte für Fitness-Tracker.
 - sleepDay_merged.csv zeigt das Schlafverhalten der Nutzer.
