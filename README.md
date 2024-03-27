@@ -133,7 +133,7 @@ sleep <-
   separate(daily_sleep, SleepDay, into = c("Date", "Time"), sep = " ")
 ```
 
-5. Beide Tabellen mit `inner_join` zusammenfügen und eine neue Spalte `Weekday` erstellen.
+5. Tabellen mit `inner_join` zusammenfügen und eine neue Spalte `Weekday` erstellen.
 ```
 combined_data <- activity %>%
   inner_join(sleep, by=c("Id","Date")) %>%
