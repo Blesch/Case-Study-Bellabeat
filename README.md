@@ -1,4 +1,4 @@
-# Case-Study-Bellabeat: How Can a Wellness Technology Company Play It Smart?
+# Case-Study-Bellabeat: "How Can a Wellness Technology Company Play It Smart?"
 
 ![Bild-Tracker_W](https://github.com/Blesch/Case-Study-Bellabeat/assets/164935736/fce68976-2c95-45fd-b929-42882a59b5a0)
 
