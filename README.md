@@ -19,9 +19,9 @@ Bellabeat ist ein innovatives High-Tech-Unternehmen, das sich auf die Herstellun
 - **Bellabeat-Mitgliedschaft**: Bellabeat bietet auch ein abonnementbasiertes Mitgliedschaftsprogramm für Nutzer an. Die Mitgliedschaft gibt den Nutzern rund um die Uhr Zugang zu vollständig personalisierter Anleitung zu Ernährung, Aktivität, Schlaf, Gesundheit und Schönheit sowie Achtsamkeit, basierend auf ihrem Lebensstil und Ziel.
 
 # 1. Ask
-In der ersten Phase geht es darum, das zugrunde liegende Problem präzise zu definieren und zu verstehen. Dabei identifiziere ich die spezifische Geschäftsaufgabe sowie alle relevanten Stakeholder. Es ist wichtig, die für das Projekt bedeutenden Stakeholder vor der Analyse zu bestimmen, um später die Präsentation entsprechend ausrichten zu können. Zum Beispiel haben Führungskräfte möglicherweise andere Interessen als direkte Teammitglieder, auch unterschiedliche Abteilungen können unterschiedliche Bedürfnisse besitzen.  
+In der ersten Phase geht es darum, das zugrunde liegende Problem präzise zu definieren und zu verstehen. Dabei identifiziere ich die spezifische Geschäftsaufgabe sowie alle relevanten Stakeholder im Unternehmen. Es ist wichtig, die für das Projekt bedeutenden Stakeholder vor der Analyse zu bestimmen, um später die Präsentation entsprechend darauf ausrichten zu können. Management-Positionen haben möglicherweise andere Interessen als Teammitglieder, auch unterschiedliche Abteilungen können unterschiedliche Bedürfnisse besitzen.
 
-Folgende Fragen leiten mich durch das Projekt:
+Folgende Fragen leiten mich durch das gesamte Projekt:
 - Welche Trends gibt es bei der Nutzung von Smart-Geräten?
 - Wie könnten diese Trends auf Bellabeat-Kunden anwendbar sein?
 - Wie könnten diese Trends die Marketingstrategie von Bellabeat beeinflussen?
@@ -42,7 +42,7 @@ Meine Aufgabe ist es, Nutzungsdaten von Smart-Geräten einer anderen Marke (Fitb
 - Sando Mur: Mathematiker und Mitbegründer von Bellabeat; wichtiges Mitglied des Führungsteams von Bellabeat.
 
 # 2. Prepare
-Nachdem ich das zu lösende Business Problem definiert habe, kann ich die mir zur Verfügung stehenden Daten betrachten und vorbereiten. Hierfür werde mit folgenden FitBit Fitness Tracker-Daten auf [Kaggle](https://www.kaggle.com/datasets/arashnic/fitbit) arbeiten.
+Nachdem ich das zu lösende Business Problem definiert habe, kann ich die mir zur Verfügung stehenden Daten betrachten und vorbereiten. Hierfür werde ich mit folgenden FitBit Fitness Tracker-Daten auf [Kaggle](https://www.kaggle.com/datasets/arashnic/fitbit) arbeiten.
 
 Folgende Fragen unterstützen mich in dieser Phase:
 - Wo sind meine Daten gespeichert?
@@ -209,7 +209,7 @@ In der letzten Phase beabsichtige ich, die Fragen zu beantworten, die ich mir in
 ## Handlungsempfehlung 
 Meine Handlungsempfehlungen werden sich auf die Produkte Leaf (Fitness-Tracker) und Time (Fitness-Uhr) sowie die Bellabeat App beziehen. Es ist wichtig zu beachten, dass die vorliegenden Daten einige Einschränkungen aufweisen. Zum einen stammen die gesammelten Informationen aus einem begrenzten Zeitraum von nur zwei Monaten. Des Weiteren wurden lediglich Daten von dreißig Nutzern analysiert. Die resultierenden Handlungsempfehlungen können als erste Richtlinien für das Bellabeat-Team dienen. Es wird jedoch dringend empfohlen, umfangreichere Auswertungen durchzuführen, entweder mit einer größeren und längeren Beobachtung oder idealerweise mit Daten von eigenen Nutzern.
 
-- Bellabeat-Produkte könnten Aktivitäts-Erinnerungen an seine Nutzer senden. Dabei ist es wichtig die Uhrzeiten auszuwählen an denen die Nutzer im Regelfall am häufigsten aktiv sind. Erinnerungen zu unpassenden Uhrzeiten werden von den Nutzern als störend empfunden. Das Ziel soll es sein die Gewohnheiten der Nutzer langfristig zu stärken und die Kontinuität zu fördern. Was wiederum die Bindung zu Bellabeat Produkten erhöhen kann.
+- Bellabeat-Produkte könnten Aktivitäts-Erinnerungen an seine Nutzer senden. Dabei ist es wichtig die Uhrzeiten auszuwählen an denen die Nutzer im Regelfall am häufigsten aktiv sind. Das Ziel soll es sein die Gewohnheiten der Nutzer langfristig zu stärken und die Kontinuität zu fördern. Was wiederum die Bindung zu Bellabeat Produkten erhöhen kann.
 - Bellabeat könnte individuelle Programme für seine Nutzer erstellen. Zum Beispiel könnten an den Wochentagen, an denen die Nutzer im Durschnitt am aktivsten sind, besonders intensive Sportprogramme empfohlen werden, um schwache Tage auszugleichen. 
 - Bellabeat könnte seine Nutzer darauf aufmerksam machen, wenn sie zu wenig Schlaf bekommen haben, um ihr Bewusstsein für ihre Schlafgewohnheiten zu schärfen.
 - Das Marketing-Team könnte regelmäßig Marketingaktionen in der App veranstalten, um Nutzer aktiv zu halten und sie für weitere Produkte zu begeistern. Durch das Erreichen von Meilensteinen, die Teilnahme an bestimmten Sportprogrammen oder das Erreichen anderer Ziele könnten Nutzer Punkte sammeln. Diese Punkte könnten als eine Art digitale Währung fungieren und in Rabatte für neue Geräte, Online-Programme oder andere Produkte investiert werden.
