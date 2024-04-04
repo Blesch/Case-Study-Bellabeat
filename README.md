@@ -90,7 +90,7 @@ Leitfragen:
 4. *Null* Werte ausfindig machen mit *Conditional Formatting* und bei Bedarf bereinigen.
 
 ## Datenexploration und -bereinigung mit R
-Der komplette R Code kann (hier)[https://github.com/Blesch/Case-Study-Bellabeat/blob/main/Case_Study_Bellabeat_Script.R] angezeigt werden.
+Der komplette R Code kann [hier](https://github.com/Blesch/Case-Study-Bellabeat/blob/main/Case_Study_Bellabeat_Script.R) angezeigt werden.
 
 1. Wichtige Pakete für die Datenmanipulierung und -bereinigung installieren und laden.  
 ```
